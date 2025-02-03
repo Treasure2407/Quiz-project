@@ -79,6 +79,16 @@ function optionSelected(answer){
         answer.classList.add("incorrect"); 
         console.log("Answer is Wrong");
 
+    }
+    if(userAns != correctAns){
+        answer.classList.add("wrong");
+        console.log("Answer is wrong");
+        answer.insertAdjacentHTML("beforeend", crossIcon);
+    }else{ 
+        answer.classList.add("correct"); 
+        console.log("Answer is correct");
+
+    
         //if answer is incorrect then automatically select the correct answer
         for (let i = 0; i < alloptions; i++){
             if (option_list.children[i].textContent==correctAns){

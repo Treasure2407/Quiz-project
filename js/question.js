@@ -2,7 +2,7 @@ let questions = [
     {
         numb: 1,
         question: "Which keyword is used to declare a variable in JavaScript?",
-        answer: "Alloftheabove ",
+        answer: "All of the above",
         options: [
             "var",
             "let",
@@ -28,10 +28,11 @@ let questions = [
         question: "What will console.log(typeof NaN); output?",
         answer: "number",
         options: [
+            "string",
             "number",
             "NaN",
             "undefined",
-            "string"
+            
         ]
     
     },
@@ -41,9 +42,9 @@ let questions = [
         question: "Which method is used to convert a string to an integer in JavaScript?",
         answer: "parseInt()",
         options: [
+            "toInt()",
             "parseInt()",
             "parseInteger()",
-            "toInt()",
             "convertToInt()"
         ]
     
@@ -92,9 +93,9 @@ let questions = [
         question: "How do you add a new element to an array in JavaScript?",
         answer: "push()",
         options: [
+            "add()",
             "push()",
             "append()",
-            "add()",
             "insert()"
         ]
     },
@@ -104,9 +105,9 @@ let questions = [
         question: "Which method removes the last element from an array?",
         answer: "pop()",
         options: [
-            "pop()",
             "removeLast()",
             "deleteLast()",
+            "pop()",
             "splice()"
         ]
     },
@@ -116,9 +117,9 @@ let questions = [
         question: "Which keyword is used for asynchronous operations in JavaScript?",
         answer: "async",
         options: [
-            "async",
             "await",
             "setTimeout",
+            "async",
             "callback"
         ]
     },
@@ -140,9 +141,9 @@ let questions = [
     question: "What does '=== ' mean in JavaScript?",
     answer: "Strict equality comparison",
     options: [
-        "Strict equality comparison",
         "Loose equality comparison",
         "Addition",
+        "Strict equality comparison",
         "Type coercion"
     ]
 },
@@ -176,9 +177,9 @@ let questions = [
     question: "Which of the following is a falsy value in JavaScript?",
     answer: "0",
     options: [
-        "0",
         "'0'",
         "true",
+        "0",
         "[]"
     ]
 },
@@ -188,9 +189,9 @@ let questions = [
     question: "Which method is used to join all the elements of an array into a string?",
     answer: "join",
     options: [
-        "join",
         "concat",
         "split",
+        "join",
         "toString"
     ]
 },
@@ -212,9 +213,9 @@ let questions = [
     question: "How can you avoid a function from running asynchronously?",
     answer: "By using 'await' inside an 'async' function",
     options: [
-        "By using 'await' inside an 'async' function",
         "By calling the function inside a callback",
         "By using 'setTimeout'",
+        "By using 'await' inside an 'async' function",
         "By declaring the function with 'async'"
     ]
 },
@@ -236,8 +237,8 @@ let questions = [
     question: "What is the purpose of 'const' in JavaScript?",
     answer: "To declare variables that cannot be reassigned",
     options: [
-        "To declare variables that cannot be reassigned",
         "To declare block-scoped variables",
+        "To declare variables that cannot be reassigned",
         "To declare variables with global scope",
         "To declare variables that can only be used inside functions"
     ]
@@ -248,8 +249,8 @@ let questions = [
     question: "Which of the following is used to select an element by ID in JavaScript?",
     answer: "document.getElementById()",
     options: [
-        "document.getElementById()",
         "document.querySelector()",
+        "document.getElementById()", 
         "document.getElementsByClassName()",
         "document.getElementsByTagName()"
     ]
@@ -296,8 +297,8 @@ let questions = [
     question: "What will be the output of console.log(0 == false)?",
     answer: "true",
     options: [
-        "true",
         "false",
+        "true",
         "undefined",
         "NaN"
     ]
@@ -308,10 +309,10 @@ let questions = [
     question: "How can you create a promise in JavaScript?",
     answer: "new Promise()",
     options: [
-        "new Promise()",
         "Promise.resolve()",
         "Promise()",
-        "new resolve()"
+        "new resolve()",
+        "new Promise()"
     ]
 },
 
@@ -320,7 +321,7 @@ let questions = [
     question: "Which operator is used to check both value and type equality?",
     answer: "===",
     options: [
-        "===",
+        "==",
         "==",
         "=",
         "==="
@@ -344,10 +345,10 @@ let questions = [
     question: "Which of the following is used to convert a string to an integer?",
     answer: "parseInt()",
     options: [
-        "parseInt()",
         "toInteger()",
         "Number()",
-        "parseFloat()"
+        "parseFloat()",
+        "parseInt()"
     ]
 },
 
@@ -356,9 +357,9 @@ let questions = [
     question: "Which method can be used to find the length of a string in JavaScript?",
     answer: "length",
     options: [
-        "length",
         "size",
         "count",
+        "length",
         "sizeOf"
     ]
 },
@@ -392,9 +393,9 @@ let questions = [
     question: "Which method is used to check if an array includes a specific element?",
     answer: "includes()",
     options: [
-        "includes()",
         "indexOf()",
         "find()",
+        "includes()",
         "search()"
     ]
 },
@@ -404,8 +405,8 @@ let questions = [
     question: "What is the difference between 'var' and 'let' in JavaScript?",
     answer: "'var' is function-scoped, while 'let' is block-scoped",
     options: [
-        "'var' is function-scoped, while 'let' is block-scoped",
         "'var' is for constants, 'let' is for variables",
+        "'var' is function-scoped, while 'let' is block-scoped",
         "'let' is function-scoped, while 'var' is block-scoped",
         "There is no difference"
     ]
@@ -428,9 +429,9 @@ let questions = [
     question: "What method would you use to convert a value to a string in JavaScript?",
     answer: "toString()",
     options: [
-        "toString()",
         "convert()",
         "toStringValue()",
+        "toString()",
         "String()"
     ]
 },
@@ -440,8 +441,8 @@ let questions = [
     question: "Which of the following is used to handle errors in JavaScript?",
     answer: "try...catch",
     options: [
-        "try...catch",
         "catch...finally",
+        "try...catch",
         "throw...catch",
         "error...handler"
     ]
@@ -452,9 +453,9 @@ let questions = [
     question: "How can you remove all items from an array in JavaScript?",
     answer: "Using splice() method",
     options: [
-        "Using splice() method",
         "Using pop() method",
         "Using shift() method",
+        "Using splice() method",
         "Using length = 0"
     ]
 },
@@ -464,8 +465,8 @@ let questions = [
     question: "Which of the following is used to check the type of a variable in JavaScript?",
     answer: "typeof",
     options: [
-        "typeof",
         "checkType",
+        "typeof",
         "instanceof",
         "getType"
     ]
@@ -476,8 +477,8 @@ let questions = [
     question: "Which of the following is a way to create an empty object?",
     answer: "let obj = {}",
     options: [
-        "let obj = {}",
         "let obj = Object()",
+        "let obj = {}",
         "let obj = new Object()",
         "let obj = []"
     ]
@@ -488,9 +489,9 @@ let questions = [
     question: "What will the following code output: console.log(Boolean('0'))?",
     answer: "true",
     options: [
-        "true",
         "false",
         "undefined",
+        "true",
         "TypeError"
     ]
 },
@@ -500,9 +501,9 @@ let questions = [
     question: "Which of the following is the correct syntax for defining an anonymous function in JavaScript?",
     answer: "function() {}",
     options: [
-        "function() {}",
         "() => {}",
         "function() => {}",
+        "function() {}",
         "() => function()"
     ]
 },
@@ -512,9 +513,9 @@ let questions = [
     question: "Which method is used to merge two arrays in JavaScript?",
     answer: "concat()",
     options: [
-        "concat()",
         "merge()",
         "combine()",
+        "concat()",
         "join()"
     ]
 },
@@ -524,9 +525,9 @@ let questions = [
     question: "What is the output of 'typeof NaN' in JavaScript?",
     answer: "'number'",
     options: [
-        "'number'",
         "'undefined'",
         "'NaN'",
+        "'number'",
         "'object'"
     ]
 },
@@ -536,10 +537,10 @@ let questions = [
     question: "How would you declare a function in JavaScript?",
     answer: "function functionName() {}",
     options: [
-        "function functionName() {}",
+        "function = functionName() {}",
         "var functionName() {}",
         "let functionName = () => {}",
-        "function = functionName() {}"
+        "function functionName() {}"
     ]
 },
 
@@ -548,10 +549,10 @@ let questions = [
     question: "Which of the following is used to create an empty array?",
     answer: "let arr = []",
     options: [
-        "let arr = []",
+        "let arr = {}",
         "let arr = Array()",
         "let arr = new Array()",
-        "let arr = {}"
+        "let arr = []"
     ]
 },
 
@@ -560,10 +561,10 @@ let questions = [
     question: "What is the correct way to create a regular expression in JavaScript?",
     answer: "/pattern/",
     options: [
-        "/pattern/",
+        "/pattern/g",
         "new RegExp('pattern')",
         "RegExp('pattern')",
-        "/pattern/g"
+        "/pattern/"
     ]
 },
 
@@ -572,9 +573,9 @@ let questions = [
     question: "Which of the following will return 'true' for an empty string?",
     answer: "str.length === 0",
     options: [
-        "str.length === 0",
-        "str === ''",
         "str.length == 0",
+        "str === ''",
+        "str.length === 0",
         "str.length > 0"
     ]
 },
@@ -584,9 +585,9 @@ let questions = [
     question: "What does the 'call()' method do in JavaScript?",
     answer: "Invokes a function with a specified 'this' value and arguments",
     options: [
-        "Invokes a function with a specified 'this' value and arguments",
         "Creates a new function",
         "Binds a function to a specific object",
+        "Invokes a function with a specified 'this' value and arguments",
         "Sets up a function to run after an interval"
     ]
 },
@@ -596,9 +597,9 @@ let questions = [
     question: "Which method is used to remove the last element of an array in JavaScript?",
     answer: "pop",
     options: [
-        "pop",
         "shift",
         "slice",
+        "pop",
         "unshift"
     ]
 
