@@ -25,7 +25,7 @@ continue_btn.onclick = ()=>{
     quiz_box.classList.add("activeQuiz");
     showQuestions(0);
     queCounter(1);
-    startTimer(10);
+    startTimer(15);
 }
 
 let que_count = 0;
@@ -107,7 +107,7 @@ function optionSelected(answer){
 
 
 function startTimer(time){
-    counter = setInterval(TimeRanges, 1000);
+    counter = setInterval(timer, 1000);
     function timer(){
         timeCount.textContent = time;
         time--;
