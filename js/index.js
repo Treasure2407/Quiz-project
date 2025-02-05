@@ -6,6 +6,7 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const timeLine = quiz_box.querySelector("header .time_line");
+const timeoff = quiz_box.querySelector("header .time_text");
 
 const option_list = document.querySelector(".option_list");
    
@@ -58,8 +59,8 @@ clearInterval(counter);
 startTimer(timeValue);
 clearInterval(counterLine);
 startTimerLine(widthValue); 
-next_btn .style.display = "none"; 
-   
+next_btn .style.display = "none";
+timeoff.textContent ="Time left";
 }
 
 quit_quiz.onclick = ()=>{
@@ -78,7 +79,10 @@ next_btn.onclick = ()=>{
         clearInterval(counterLine);
         startTimerLine(widthValue); 
         next_btn .style.display = "none"; 
+        timeoff.textContent ="Time left";
     }else{
+        clearInterval(counter);
+        clearInterval(counterLine);
         console.log("Questions completed");
         showResultbox();
     } 
@@ -129,15 +133,15 @@ function optionSelected(answer){
     }else{ 
         answer.classList.add("correct"); 
         console.log("Answer is correct");
+        
 
     
         //if answer is incorrect then automatically select the correct answer
         for (let i = 0; i < alloptions; i++){
             if (option_list.children[i].textContent==correctAns){
                   option_list.children[i].setAttribute("class", "option correct");
-            }
         }
-    
+        }
 }
 
     for (let i = 0; i < alloptions; i++) {
@@ -179,22 +183,22 @@ function startTimer(time){
         if(time < 0){
             clearInterval(counter);
             timeCount.textContent = "00";
+            timeoff.textContent ="Time Off";
 
             let correctAns = questions[que_count].answer;
             let alloptions = option_list.children.length; 
            
 
             for (let i = 0; i < alloptions; i++){
-                if (option_list.children[i].textContent==correctAns){
+                if (option_list.children[i].textContent == correctAns){
                       option_list.children[i].setAttribute("class", "option correct");
+                      option_list.children[i].insertAdjacentHTML("beforeend", tickIcon);
                 }
             }
             for (let i = 0; i < alloptions; i++){
-                if (option_list.children[i].textContent==correctAns){
-                      option_list.children[i].setAttribute("class", "option correct");
-                }
+                option_list.children[i].classList.add("disabled");
             }
-        
+            next_btn .style.display = "block"; 
         }
         }
     }
